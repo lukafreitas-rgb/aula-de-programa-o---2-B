@@ -1,0 +1,121 @@
+.titulo1{
+    color: rgba(0, 255, 251, 0.794);
+    align-items: center;
+    text-align: center;
+    background-color: rgb(19, 0, 161);
+    height: 100px;
+    }
+    .container{
+    padding: 100px;
+    border-radius: 15px;
+    background-color: rgb(19, 4, 128);
+    }
+    img{
+    width: 400px;
+    height: 400px;
+    }
+    .fundo{
+        align-content: center;
+        background-color:rgb(19, 4, 128) ;
+    }
+    
+    /* ========================================
+       POSICIONAMENTO ESTÁTICO
+       ======================================== */
+    .imagem_leao {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+    }
+    
+    .rei_leao {
+        width: 300px;
+        height: 400px;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    
+    .imagem_bela{
+        position: absolute;
+        top: 80%;
+        left: 10%;
+    }
+    
+    .bela {
+        width: 300px;
+        height: 400px;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    
+    .imagem_alladin{
+        position: absolute;
+        top: 140%;
+        left: 10%;
+    }
+    
+    .aladdin {
+        width: 300px;
+        height: 400px;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+    }
+    
+    /* ========================================
+       EFEITOS MOUSEOVER - APROXIMAR
+       ======================================== */
+    .rei_leao:hover {
+        transform: scale(1.35);
+        filter: brightness(1.2) drop-shadow(0 0 25px rgba(38, 0, 255, 0.8));    
+    }
+    
+    .bela:hover {
+        transform: scale(1.35);
+        filter: brightness(1.2) drop-shadow(0 0 25px rgba(38,0,255,0.8));    
+    }
+    
+    .aladdin:hover {
+        transform: scale(1.35);
+        filter: brightness(1.2) drop-shadow(0 0 25px rgba(38,0,255,0.8));    
+    }
+    
+    /* ========================================
+       EFEITOS MOUSEOUT - VOLTAR (automático)
+       ======================================== */
+    .rei_leao:not(:hover),
+    .bela:not(:hover),
+    .aladdin:not(:hover) {
+        transform: scale(1);
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    }
+    
+    /* ========================================
+       EFEITOS CLICK
+       ======================================== */
+    .rei_leao:active,
+    .bela:active,
+    .aladdin:active {
+        transform: scale(1.5) !important;
+        transition: transform 0.1s ease !important;
+    }
+    
+    /* ========================================
+       RESPONSIVO
+       ======================================== */
+    @media (max-width: 768px) {
+        .rei_leao, .bela, .aladdin {
+            width: 90px !important;
+        }
+        
+        .imagem_leao { top: 15% !important; left: 5% !important; }
+        .bela { top: 45% !important; right: 10% !important; }
+    }
+    .cabeçalho{
+    
+        align-items: center;
+        text-align: center;
+        height: 100px;
+    }
